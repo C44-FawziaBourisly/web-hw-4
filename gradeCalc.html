@@ -3,32 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>حاسبة الدرجات 🎓🎓</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="wrapper">
-      <h1>الحاسبة 🔢</h1>
+      <h1 class="tittle">الحاسبة 🔢</h1>
 
       <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
 
-      <input id="Quizes" type="text" />
-      <input id="Midterm" type="text" />
-      <input id="FinalTest" type="text" />
-      <input id="Oral" type="text" />
+      <div class="div1">
+        <h3 class="h3">Quizes :</h3>
+        <input class="input" id="Quizes" type="text" />
+      </div>
+
+      <div class="div1">
+        <h3 class="h3">Midterms :</h3>
+        <input class="input" id="Midterm" type="text" />
+      </div>
+
+      <div class="div1">
+        <h3 class="h3">FinalTest :</h3>
+        <input class="input" id="FinalTest" type="text" />
+      </div>
+
+      <div class="div1">
+        <h3 class="h3">Oral :</h3>
+        <input class="input" id="Oral" type="text" />
+      </div>
 
       <input
+        class="submit"
         id="submitButton"
         type="button"
         value="calculate"
         onClick="submit()"
       />
 
-      <p>مجموع درجاتك (بالأرقام) هو</p>
-      <div id="total_grades"></div>
+      <div class="total" id="total_grades"></div>
 
-      <p>درجتك النهائية هي (بالأحرف)</p>
-      <div id="final_grade"></div>
+      <div class="total" id="final_grade"></div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
